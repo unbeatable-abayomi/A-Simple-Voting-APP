@@ -1,22 +1,34 @@
-.App {
-  text-align: center;
+.App,
+body {
+	text-align: center;
+	background-color: #282c34;
 }
 
 .App-logo {
-  height: 40vmin;
+	height: 40vmin;
+}
+.component_parties {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.voterName,
+.voterID {
+	display: block;
+}
+.voterID,
+.voterName {
+	margin-left: 3rem;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	color: white;
 }
 
 .App-link {
-  color: #09d3ac;
+	color: #09d3ac;
 }
