@@ -10,7 +10,7 @@ class APC_COMPONENT extends React.Component {
   
   getAPCvoters(e){
     e.preventDefault()
-     let voter_name = e.target.elements.voter.value.trim();
+     let voter_name = e.target.elements.voter.value.toLowerCase().trim();
      let voter_Id = e.target.elements.cardId.value;
      e.target.elements.cardId.value = '';
      e.target.elements.voter.value = '';

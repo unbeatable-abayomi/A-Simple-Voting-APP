@@ -1,5 +1,6 @@
 import React from 'react';
 import PDPForm from './PDP_FORM'
+import { toUnicode } from 'punycode';
 
 
 class PDP_COMPONENT extends React.Component {
@@ -17,10 +18,11 @@ class PDP_COMPONENT extends React.Component {
     
     getPDPvoters(e){
         e.preventDefault()
-        let voter_name = e.target.elements.voter.value.trim();
+        let voter_name = e.target.elements.voter.value.toLowerCase().trim();
         let voter_Id = e.target.elements.cardId.value;
         e.target.elements.cardId.value = '';
         e.target.elements.voter.value = '';
+        
    
        this.props.vote(voter_name, voter_Id, 'PDP')  
     }
